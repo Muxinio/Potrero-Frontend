@@ -1,0 +1,144 @@
+* {
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    background-image: url('/images/Back.jpg');
+    background-size: cover;
+    display: flex;
+    
+    
+}
+
+.main {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding: auto;
+    background-color: #090909;
+}
+
+
+.about-title1 {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    border-color: #f5c5c5;
+    background-color: #090909;
+    border-radius: 5px;
+}
+
+.about-subtitle {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    border-color: #ee0000;
+    background-color: #090909;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.about-logo {
+    position: relative;
+    text-align: center;
+}
+
+.contact-form {
+    background-image: url('/images/');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.418); 
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%; 
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    margin: 60px; 
+}
+
+label {
+    margin-bottom: 10px;
+    color: #ffffff; 
+}
+
+input,
+textarea {
+    
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    background-color: rgb(155, 155, 155); /* transparencia */
+    color: #000000; /* Texto */
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+button:active {
+    background-color: #910000;
+    box-shadow: 0 3px #666;
+    transform: translateY(1px);
+}
+
+.footer {
+    background-size: cover;
+    box-sizing: content-box;
+    background-image: url('/images/Fondo\ negativo.jpg');
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .head {
+        padding: 30px 0;
+    }
+
+    .about-title1,
+    .about-subtitle {
+        font-size: 20px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .head {
+        padding: 20px 0;
+    }
+
+    .about-title1,
+    .about-subtitle {
+        font-size: 18px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
